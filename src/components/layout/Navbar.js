@@ -16,6 +16,9 @@ class Navbar extends Component {
                         <Link to="/posts">Posts</Link>
                     </li>
                     <li>
+                        <Link to="/formhandling">FormHandling</Link>
+                    </li>
+                    <li>
                         <Link to="/nasaspaceappspractice">NASA-Practice</Link>
                     </li>
                     <li>

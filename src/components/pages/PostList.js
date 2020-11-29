@@ -17,16 +17,22 @@ class PostList extends Component {
                 PostList
                 {this.state.loading || !this.state.posts ? (<p>Loading...</p>) :
                     (
-                        <div>
+                        <>
                             {this.state.posts.map(post => (
-                                <p>
+                                <p style={{
+                                    border: "solid",
+                                    borderWidth: 2,
+                                    borderRadius: 4,
+                                    padding: 4,
+                                    backgroundColor: "#9bed98"
+                                }}>
                                     ID: {post.id}<br />
                                     User ID: {post.userId}<br />
                                     Title: {post.title}<br />
                                     Body: {post.body}<br />
                                 </p>
                             ))}
-                        </div>
+                        </>
                     )
                 }
             </div>

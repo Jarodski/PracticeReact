@@ -7,7 +7,7 @@ import CountryList from './components/pages/CountryList'
 import CountryDetails from './components/pages/CountryDetails'
 import NASAspaceappsPractice from './components/pages/NASAspaceappsPractice'
 import PostList from './components/pages/PostList'
-import TestPage from './components/pages/TestPage'
+import FormHandling from './components/pages/FormHandling'
 
 import RandomUser from './components/testing1'
 import NasaSat from './components/testing2'
@@ -25,11 +25,11 @@ class App extends Component {
       <div>
         <Router>
           <Navbar />
-          <TestPage />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/countries" component={CountryList} />
             <Route exact path="/posts" component={PostList} />
+            <Route exact path="/formhandling" component={FormHandling} />
             <Route path="/countries/:alpha3Code" component={CountryDetails} />
             <Route exact path="/nasaspaceappspractice" component={NASAspaceappsPractice} />
             <Route path="/randomUser" component={RandomUser} />
